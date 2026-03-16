@@ -64,6 +64,11 @@ header{
         padding-left: 25px;
 }
 
+.right-header a:hover{
+        color: #edff66;
+
+}
+
 .hero-section{
         position: relative;
         width: 100%;
