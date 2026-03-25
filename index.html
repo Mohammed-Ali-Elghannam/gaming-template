@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
         <title>Gaming Website</title>
 </head>
 
@@ -27,12 +28,14 @@
                         </div>
                 </header>
 
-
                 <section class="hero-section autoBlur">
                         <div class="hero-vid">
-                                <video class="hero-video" loop autoplay muted plays-inline>
+
+                                <video id="heroVideo" class="hero-video" autoplay muted loop playsinline>
                                         <source src="videos/hero-1.mp4" type="video/mp4">
                                 </video>
+
+                                <video id="transitionVideo" class="transition-video" muted loop playsinline></video>
 
                                 <div class="hero-info">
                                         <h1>REDEFINE</h1>
@@ -40,8 +43,16 @@
                                         <button>Watch Trailer</button>
                                 </div>
 
-                                <h1 class="gaming-text"> Gaming </h1>
-                                <div class="next-btn">NEXT</div>
+                                <h1 class="gaming-text">Gaming</h1>
+
+                                <div class="mini-vid-container">
+                                        <video id="miniVideo" class="mini-video" muted loop playsinline>
+                                                <source src="videos/hero-2.mp4" type="video/mp4">
+                                        </video>
+                                </div>
+
+                                <!-- <div class="next-btn">NEXT</div>  -->
+
                         </div>
                 </section>
 
